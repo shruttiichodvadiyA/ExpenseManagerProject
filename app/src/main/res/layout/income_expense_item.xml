@@ -5,81 +5,81 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:weightSum="6">-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:weightSum="6">-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/txtincomeExpense"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_weight="1"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/black" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/txtincomeExpense"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/black" />-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/txtdate"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_weight="1"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/black" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/txtdate"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/black" />-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/txtcategory"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_weight="1"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/black" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/txtcategory"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/black" />-->
 
 
-<!--        <TextView-->
-<!--            android:id="@+id/txtmode"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_weight="1"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/black" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/txtmode"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/black" />-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/txtamount"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_weight="1"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/black" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/txtamount"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/black" />-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/txtnote"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_weight="1"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/black" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/txtnote"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="@color/black" />-->
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imgedit"-->
-<!--            android:layout_width="@dimen/_25sdp"-->
-<!--            android:layout_height="@dimen/_25sdp"-->
-<!--            android:layout_marginRight="@dimen/_5sdp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:src="@drawable/edit" />-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imgedit"-->
+    <!--            android:layout_width="@dimen/_25sdp"-->
+    <!--            android:layout_height="@dimen/_25sdp"-->
+    <!--            android:layout_marginRight="@dimen/_5sdp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:src="@drawable/edit" />-->
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imgdelete"-->
-<!--            android:layout_width="@dimen/_25sdp"-->
-<!--            android:layout_height="@dimen/_25sdp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:src="@drawable/delete" />-->
-<!--    </LinearLayout>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imgdelete"-->
+    <!--            android:layout_width="@dimen/_25sdp"-->
+    <!--            android:layout_height="@dimen/_25sdp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:src="@drawable/delete" />-->
+    <!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -98,9 +98,9 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:padding="@dimen/_10sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
                     android:weightSum="2">
 
                     <TextView
@@ -117,13 +117,14 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="date" />
+                        android:text="date"
+                        android:textColor="#ffffff" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:padding="@dimen/_10sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
                     android:weightSum="3">
 
                     <TextView
@@ -132,7 +133,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="category" />
+                        android:text="category"
+                        android:textColor="#ffffff" />
 
                     <TextView
                         android:id="@+id/txtmode"
@@ -140,7 +142,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="mode" />
+                        android:text="mode"
+                        android:textColor="#ffffff" />
 
                     <TextView
                         android:id="@+id/txtamount"
@@ -148,37 +151,48 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="amount" />
+                        android:text="amount"
+                        android:textColor="#ffffff" />
 
                 </LinearLayout>
 
+
+
                 <TextView
                     android:id="@+id/txtnote"
-                    android:padding="@dimen/_10sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:text="note" />
+                    android:padding="@dimen/_10sdp"
+                    android:text="note"
+                    android:textColor="#ffffff" />
 
                 <LinearLayout
-                    android:padding="@dimen/_10sdp"
-                    android:weightSum="2"
-                    android:background="@color/white"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/_10sdp"
+                    android:weightSum="2">
+
                     <ImageView
                         android:id="@+id/imgedit"
-                        android:layout_weight="1"
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:src="@drawable/edit"/>
+                        android:layout_weight="1"
+                        android:src="@drawable/edit" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#19688B" />
+
                     <ImageView
                         android:id="@+id/imgdelete"
-                        android:layout_weight="1"
                         android:layout_width="@dimen/_25sdp"
                         android:layout_height="@dimen/_25sdp"
-                        android:src="@drawable/delete"/>
+                        android:layout_weight="1"
+                        android:src="@drawable/delete" />
 
                 </LinearLayout>
             </LinearLayout>

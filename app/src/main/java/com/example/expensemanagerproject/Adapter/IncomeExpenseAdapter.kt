@@ -1,5 +1,7 @@
 package com.example.expensemanagerproject.Adapter
 
+import android.graphics.Color
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,6 +37,14 @@ class IncomeExpenseAdapter( var incomeExpenselist: ArrayList<IncomeExpenseModelC
         holder.txtincomeExpense.setText(incomeExpenselist[position].type.toString())
         holder.txtnote.setText(incomeExpenselist[position].note)
 
+        if (holder.txtincomeExpense.text.toString()=="1"){
+            holder.txtincomeExpense.setBackgroundColor(Color.GREEN)
+            Log.e("TAG", "onBindViewHolder: "+holder.txtincomeExpense.text.toString() )
+        }
+        else{
+            holder.txtincomeExpense.setBackgroundColor(Color.RED)
+            Log.e("TAG", "onBindViewHolder: "+holder.txtincomeExpense.text.toString() )
+        }
         holder.imgedit.setOnClickListener {
 
             invoke.invoke(incomeExpenselist[position])
@@ -42,6 +52,7 @@ class IncomeExpenseAdapter( var incomeExpenselist: ArrayList<IncomeExpenseModelC
         holder.imgdelete.setOnClickListener {
             delete.invoke(incomeExpenselist[position].id)
         }
+
 
     }
 
