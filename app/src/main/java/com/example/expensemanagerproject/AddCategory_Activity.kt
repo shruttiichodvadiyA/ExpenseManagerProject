@@ -33,8 +33,8 @@ class AddCategory_Activity : AppCompatActivity() {
         }
         binding.imgback.setOnClickListener {
 
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            onBackPressed()
+
         }
         binding.imgright.setOnClickListener {
 

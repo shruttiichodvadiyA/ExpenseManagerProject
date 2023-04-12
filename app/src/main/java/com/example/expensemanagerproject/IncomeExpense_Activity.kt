@@ -31,7 +31,7 @@ class IncomeExpense_Activity : AppCompatActivity() {
     var selectcategory = ""
     var selectmode = ""
     var id_number = 0
-    var flag=0
+    var flag = 0
     lateinit var db: DataHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,14 +47,13 @@ class IncomeExpense_Activity : AppCompatActivity() {
 
     private fun income() {
 
-        if (intent != null && intent.hasExtra("updateRecord"))
-        {
-flag=1
+        if (intent != null && intent.hasExtra("updateRecord")) {
+            flag = 1
             val newamount: String? = intent.getStringExtra("amount")
             val newnote: String? = intent.getStringExtra("note")
             val newtitle: String? = intent.getStringExtra("title")
             val icon: String? = intent.getStringExtra("key_icon")
-            id_number=intent.getIntExtra("id",0)
+            id_number = intent.getIntExtra("id", 0)
 
 
             binding.edtamount.setText(newamount)
@@ -111,10 +110,16 @@ flag=1
         binding.txttitle.text = name
 
         binding.back.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+
+            onBackPressed()
         }
         binding.layoutmode.setOnClickListener {
+            mode.add("CASH")
+            mode.add("CREDIT CARD")
+            mode.add("DEBIT CARD")
+            mode.add("UPI")
+            mode.add("NET BANKING")
+            mode.add("CHEQUE")
 
             val dialog = Dialog(this)
             val dialogBinding: ModeDialogBinding = ModeDialogBinding.inflate(layoutInflater)
@@ -147,12 +152,7 @@ flag=1
             }
 
         }
-        mode.add("CASH")
-        mode.add("CREDIT CARD")
-        mode.add("DEBIT CARD")
-        mode.add("UPI")
-        mode.add("NET BANKING")
-        mode.add("CHEQUE")
+
 
         val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy")
         val date: String = simpleDateFormat.format(Date())
@@ -187,7 +187,7 @@ flag=1
                         type = 2
                     }
                 }
-                if (flag==1) {
+                if (flag == 1) {
                     db.update(amount, note, id_number)
                 } else {
                     db.insertIncomeExpense(

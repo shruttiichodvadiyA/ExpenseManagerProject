@@ -87,8 +87,7 @@ class Transactions_Activity : AppCompatActivity() {
         adapter.update(incomeExpenselist)
 
         binding.back.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+           onBackPressed()
         }
 
     }

@@ -38,11 +38,11 @@ class IncomeExpenseAdapter( var incomeExpenselist: ArrayList<IncomeExpenseModelC
         holder.txtnote.setText(incomeExpenselist[position].note)
 
         if (holder.txtincomeExpense.text.toString()=="1"){
-            holder.txtincomeExpense.setBackgroundColor(Color.GREEN)
+            holder.txtincomeExpense.setTextColor(Color.GREEN)
             Log.e("TAG", "onBindViewHolder: "+holder.txtincomeExpense.text.toString() )
         }
         else{
-            holder.txtincomeExpense.setBackgroundColor(Color.RED)
+            holder.txtincomeExpense.setTextColor(Color.RED)
             Log.e("TAG", "onBindViewHolder: "+holder.txtincomeExpense.text.toString() )
         }
         holder.imgedit.setOnClickListener {

@@ -23,16 +23,15 @@ class ModeAdapter(var mode: ArrayList<String>,var invoke:((String)->Unit)) : Rec
 
     override fun onBindViewHolder(holder: myview, position: Int) {
         holder.btnrbmode.setText(mode[position])
-        invoke.invoke(mode[position])
+
+
+
         holder.btnrbmode.setOnClickListener {
+            invoke.invoke(mode[position])
             pos = position
             notifyDataSetChanged()
         }
-        if (position == pos) {
-            holder.btnrbmode.isChecked = true
-        } else {
-            holder.btnrbmode.isChecked = false
-        }
+        holder.btnrbmode.isChecked = position == pos
 
     }
 
