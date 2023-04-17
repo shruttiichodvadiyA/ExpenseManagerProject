@@ -8,304 +8,318 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#19688B"
-        android:gravity="center">
+        android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/imgmenu"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/menu" />
-
-            <TextView
-                android:layout_width="@dimen/_180sdp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_30sdp"
-                android:gravity="center_vertical"
-                android:text="Expense Manager"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_18ssp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imgcalender"
-                android:layout_width="@dimen/_17sdp"
-                android:layout_height="@dimen/_17sdp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/calendar" />
-
-            <ImageView
-                android:id="@+id/imgcrown"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:src="@drawable/crown" />
-        </androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_10sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:cardElevation="@dimen/_20sdp"
-        app:cardMaxElevation="@dimen/_20sdp"
-        app:cardPreventCornerOverlap="true">
-
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="match_parent">
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#19688B"
+                android:gravity="center">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_gravity="center_vertical"
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgmenu"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/menu" />
+
+                    <TextView
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:gravity="center_vertical"
+                        android:text="Expense Manager"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgcalender"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/calendar" />
+
+                    <ImageView
+                        android:id="@+id/imgcrown"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:src="@drawable/crown" />
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_10sdp"
-                android:src="@drawable/transaction" />
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_20sdp"
+                app:cardMaxElevation="@dimen/_20sdp"
+                app:cardPreventCornerOverlap="true">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="No Transactions"
-                android:textColor="#19688A"
-                android:textSize="@dimen/_20ssp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:gravity="center"
-                android:text="Please add your transaction" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/layoutincome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginVertical="@dimen/_7sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:cardPreventCornerOverlap="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#DAF5FF"
-                android:padding="@dimen/_10sdp">
-
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:background="@drawable/imgcircle"
-                    android:padding="@dimen/_5sdp"
-                    android:src="@drawable/money" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:text="add income"
-                    android:textAllCaps="true"
-                    android:textColor="#19688A"
-                    android:textSize="@dimen/_18ssp"
-                    android:textStyle="bold" />
+                    android:orientation="vertical">
 
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/transaction" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/layoutexpense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginVertical="@dimen/_7sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:cardPreventCornerOverlap="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="No Transactions"
+                        android:textColor="#19688A"
+                        android:textSize="@dimen/_20ssp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:text="Please add your transaction" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layoutincome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#D4E8FF"
-                android:padding="@dimen/_10sdp">
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardPreventCornerOverlap="true">
 
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:background="@drawable/expensecircle"
-                    android:padding="@dimen/_5sdp"
-                    android:src="@drawable/moneytransfer" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:text="add expenses"
-                    android:textAllCaps="true"
-                    android:textColor="#4B81BF"
-                    android:textSize="@dimen/_18ssp"
-                    android:textStyle="bold" />
+                    android:layout_height="wrap_content">
 
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DAF5FF"
+                        android:padding="@dimen/_10sdp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/layouttrans"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginVertical="@dimen/_7sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:cardPreventCornerOverlap="true">
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/imgcircle"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/money" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:text="add income"
+                            android:textAllCaps="true"
+                            android:textColor="#19688A"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
 
-            <LinearLayout
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layoutexpense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFECDD"
-                android:padding="@dimen/_10sdp">
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardPreventCornerOverlap="true">
 
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:background="@drawable/alltrancecircle"
-                    android:padding="@dimen/_5sdp"
-                    android:src="@drawable/trance" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:text="all transaction"
-                    android:textAllCaps="true"
-                    android:textColor="#E38B44"
-                    android:textSize="@dimen/_18ssp"
-                    android:textStyle="bold" />
+                    android:layout_height="wrap_content">
 
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E8FF"
+                        android:padding="@dimen/_10sdp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/layoutreports"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginVertical="@dimen/_7sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:cardPreventCornerOverlap="true">
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/expensecircle"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/moneytransfer" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:text="add expenses"
+                            android:textAllCaps="true"
+                            android:textColor="#4B81BF"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
 
-            <LinearLayout
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layouttrans"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F8D5D5"
-                android:padding="@dimen/_10sdp">
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardPreventCornerOverlap="true">
 
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:background="@drawable/reportcircle"
-                    android:padding="@dimen/_7sdp"
-                    android:src="@drawable/report" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:text="reports"
-                    android:textAllCaps="true"
-                    android:textColor="#E26468"
-                    android:textSize="@dimen/_18ssp"
-                    android:textStyle="bold" />
+                    android:layout_height="wrap_content">
 
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFECDD"
+                        android:padding="@dimen/_10sdp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/layoutcategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginVertical="@dimen/_7sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:cardPreventCornerOverlap="true">
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/alltrancecircle"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/trance" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:text="all transaction"
+                            android:textAllCaps="true"
+                            android:textColor="#E38B44"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
 
-            <LinearLayout
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layoutreports"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FBFFB1"
-                android:padding="@dimen/_10sdp">
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardPreventCornerOverlap="true">
 
-                <ImageView
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:background="@drawable/categorycircle"
-                    android:padding="@dimen/_7sdp"
-                    android:src="@drawable/category" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/_20sdp"
-                    android:text="Add Category"
-                    android:textAllCaps="true"
-                    android:textColor="#FFE500"
-                    android:textSize="@dimen/_18ssp"
-                    android:textStyle="bold" />
+                    android:layout_height="wrap_content">
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F8D5D5"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/reportcircle"
+                            android:padding="@dimen/_7sdp"
+                            android:src="@drawable/report" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:text="reports"
+                            android:textAllCaps="true"
+                            android:textColor="#E26468"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layoutcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FBFFB1"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/categorycircle"
+                            android:padding="@dimen/_7sdp"
+                            android:src="@drawable/category" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:text="Add Category"
+                            android:textAllCaps="true"
+                            android:textColor="#FFE500"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
 
 
 </LinearLayout>

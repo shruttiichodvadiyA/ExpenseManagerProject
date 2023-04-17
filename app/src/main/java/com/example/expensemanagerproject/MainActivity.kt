@@ -38,13 +38,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
         binding.imgcalender.setOnClickListener {
             val intent = Intent(this, Calender_Activity::class.java)
             startActivity(intent)
         }
+        binding.imgmenu.setOnClickListener {
 
-
+        }
     }
 }
